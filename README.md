@@ -303,34 +303,3 @@ These options are used in PlanFlight mode.
 ## Contributors
 
 To contribute to this project, contact @benjamin.heiner
-
-## License
-
-UNCLASSIFIED//FOUO
-
-Distribution Statement C: Distribution authorized to U.S. Government
-Agencies and their contractors: Administrative or Operational Use; 04 May 2017.
-Other requests for this document shall be referred to AFRL/RYA, 2241 Avionics
-Circle, Wright-Patterson AFB, OH 45433.
-
-WARNING: This software contains technical data whose export is restricted
-by the Arms Export Control Act (Title 22, U.S.C., Sec 2751, et seq.) or the
-Export Administration Act of 1979 (Title 50, U.S.C., App. 2401 et seq), as
-amended. Violations of these export laws are subject to severe criminal
-penalties. Disseminate in accordance with provisions of DoD Directive 5230.25.
-
-
-Software Usage Agreement
-
-Released under the DoD Community Source Usage Agreement Version 1.1 by
-AFRL/RYA; you may not use this file except in compliance with the terms and
-conditions of DFARS 227.7103-7 (Use and non-disclosure agreement), 252.204-7000
-(Disclosure of Information) and 252.227-7025 (Limitations on the Use or
-Disclosure of Government-Furnished Information Marked with Restrictive
-Legends). Other requests must be referred to AFRL/RYA. This Software is
-distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
-Distribution authorized to U.S. Government Agencies and their contractors.
-Other requests for this document shall be referred to AFRL/RYA. Disseminate in
-accordance with provisions of DoD Directive 5230.25. See the DCS Usage
-Agreement for the specific language governing permissions and limitations. You
-may obtain a copy of the Agreement at https://software.forge.mil/sf/go/doc1216
