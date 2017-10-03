@@ -1,0 +1,56 @@
+dirs:
+    # Path to folder containing DTED file
+    directory_terrain: 'E:/21_Sept_2015_WAMI_Flight_1/Terrain'
+    # Path to folder containing imagery
+    directory_images: 'E:/2015.09.24_10.33.46'
+    # Path to folder containing metadata
+    directory_metadata: 'E:/Bags/20150924_Flight1a'
+    # Type of metadata ('Muscat', or 'Medina')
+    metadata_type: 'Muscat'
+crop:
+    # Crop terrain data to an area of interest
+    # Type of cropping ('KML','FC','BB')
+    cropType: 'INTERP'
+    # Path to kml file containing a polygon around the area of interest.
+    path_POI: 'C:/Users/student/Documents/Project/POI/muscatPOI2.kml'
+    # Four corners to crop to
+    FC_tl: [0,1]
+    FC_tr: [1,1]
+    FC_bl: [0,0]
+    FC_br: [1,0]
+    # extra border size cropped area (m)
+    pad: 75
+dome:
+    # Add dome to target area to promote side views
+    enable: True
+    # Height of added dome (m)
+    height: 25
+angle_reduction:
+    # Adjust FOV to increase overlap
+    enable: True
+    # Adjustment for visibility checks (0-1)
+    visibility: 0.8
+    # Adjustment for plotting
+    plotting: 1
+cam_range:
+    # Camera far visibility limit ( far * max(cam_elevation))
+    far: 3
+    # Camera near visibility limit (m)
+    near: 200
+selection:
+    # Coverage tolerance for greedy algorithm
+    tol: 1   
+plotting:
+    # Do plots (with associated calculations)
+    enable: True
+    # Turn various plots on and off
+    initialImages: True
+    finalImages: True
+    initialCoverage: True
+    finalCoverage: True
+output:
+    # Write selected frame list, copy images to Selected folder,
+    # Geotag images, and write pair list
+    enable: True
+    # Number of matches between images in pair list
+    pair_list_matches: 8

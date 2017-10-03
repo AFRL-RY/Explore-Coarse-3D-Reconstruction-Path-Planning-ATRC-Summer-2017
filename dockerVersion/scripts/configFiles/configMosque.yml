@@ -1,0 +1,56 @@
+dirs:
+    # Path to folder containing DTED file
+    directory_terrain: 'E:\movies\Mosque\MosqueTerrain'
+    # Path to folder containing imagery
+    directory_images: 'E:\movies\Mosque\MosqueImages'
+    # Path to folder containing metadata
+    directory_metadata: 'E:\movies\Mosque\MosqueMetaData'
+    # Type of metadata ('Muscat', or 'Medina')
+    metadata_type: 'Medina'
+crop:
+    # Crop terrain data to an area of interest
+    # Type of cropping ('KML','FC','BB')
+    cropType: 'KML'
+    # Path to kml file containing a polygon around the area of interest.
+    path_POI: 'E:/movies/Mosque/MosquePOI/mosque.kml'
+    # Four corners to crop to
+    FC_tl: [0,1]
+    FC_tr: [1,1]
+    FC_bl: [0,0]
+    FC_br: [1,0]
+    # extra border size cropped area (m)
+    pad: 200
+dome:
+    # Add dome to target area to promote side views
+    enable: True
+    # Height of added dome (m)
+    height: 600
+angle_reduction:
+    # Adjust FOV to increase overlap
+    enable: True
+    # Adjustment for visibility checks (0-1)
+    visibility: 1
+    # Adjustment for plotting (0-1)
+    plotting: 1
+cam_range:
+    # Camera far visibility limit ( far * max(cam_elevation))
+    far: 2
+    # Camera near visibility limit (m)
+    near: 200
+selection:
+    # Coverage tolerance for greedy algorithm (0-1)
+    tol: 1  
+plotting:
+    # Do plots (with associated calculations)
+    enable: True
+    # Turn various plots on and off
+    initialImages: True
+    finalImages: False
+    initialCoverage: False
+    finalCoverage: True
+output:
+    # Write selected frame list, copy images to Selected folder,
+    # Geotag images, and write pair list
+    enable: True
+    # Number of matches between images in pair list
+    pair_list_matches: 3

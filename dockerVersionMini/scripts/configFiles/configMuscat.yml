@@ -1,0 +1,81 @@
+dirs:
+    # Path to folder containing DTED file
+    directory_terrain: 'E:/21_Sept_2015_WAMI_Flight_1/Terrain'
+    # Path to folder containing imagery
+    directory_images: 'E:/2015.09.24_10.33.46'
+    # Path to folder containing metadata
+    directory_metadata: 'E:/Bags/20150924_Flight1a'
+    # Type of metadata ('Muscat', or 'Medina')
+    metadata_type: 'Muscat'
+run:
+    # Choose from 'SelectImages' or 'PlanFlight'
+    mode: 'SelectImages'
+terrain:
+    # Choose from 'PLY' or 'DTED'
+    source: 'DTED'
+crop:
+    # Crop terrain data to an area of interest
+    # Type of cropping ('KML','FC','BB','INTERP')
+    cropType: 'INTERP'
+    # Path to kml file containing a polygon around the area of interest.
+    path_POI: '/POI/muscat.kml'
+    # Four corners to crop to
+    FC_tl: [0,1]
+    FC_tr: [1,1]
+    FC_bl: [0,0]
+    FC_br: [1,0]
+    # extra border size cropped area (m)
+    pad: 50
+dome:
+    # Add dome to target area to promote side views
+    enable: True
+    # Height of added dome (m)
+    height: 50
+angle_sorting:
+    # Vertical bins
+    vertical: 3
+    max_incidence: 45
+    # Horizontal bins
+    horizontal: 5
+angle_reduction:
+    # Adjust FOV to increase overlap
+    enable: True
+    # Adjustment for visibility checks (0-1)
+    visibility: 0.5
+overlap_enhancement:
+    # Promote centered points
+    enable: True
+    ratio: 0.1
+cam_range:
+    # Camera far visibility limit ( far * max(cam_elevation))
+    far: 1.25
+    # Camera near visibility limit (m)
+    near: 200
+selection:
+    # Coverage tolerance for greedy algorithm
+    tol: 1   
+plotting:
+    # Do plots (with associated calculations)
+    enable: False
+    # Turn various plots on and off
+    initialImages: True
+    finalImages: True
+    initialCoverage: True
+    finalCoverage: True
+    frustums: True
+    flightPath: True
+output:
+    # Write selected frame list, copy images to Selected folder,
+    # Geotag images, and write pair list
+    enable: True
+    # Number of matches between images in pair list
+    pair_list_matches: 8
+flightPath:
+    # Desired elevation (elipsoid) for flight path (m)
+    elevation: 600
+    # Horizontal field of view (deg)
+    alphax: 30
+    # Vertical field of view (deg)
+    alphay: 30
+    # Minimum turn radius (m)
+    min_turn: 100

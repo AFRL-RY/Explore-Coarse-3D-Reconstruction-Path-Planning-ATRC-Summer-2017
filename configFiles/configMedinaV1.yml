@@ -1,0 +1,61 @@
+dirs:
+    # Path to folder containing DTED file
+    directory_terrain: 'E:/movies/Vehicles1/Vehicles1_Terrain/'
+    # Path to folder containing imagery
+    directory_images: 'E:/movies/Vehicles1/Vehicles1_Images/'
+    # Path to folder containing metadata
+    directory_metadata: 'E:/movies/Vehicles1/Vehicles1_MetaData/'
+    # Type of metadata ('Muscat', or 'Medina')
+    metadata_type: 'Medina'
+crop:
+    # Crop terrain data to an area of interest
+    # Type of cropping ('KML','FC','BB')
+    cropType: 'FC'
+    # Path to kml file containing a polygon around the area of interest.
+    path_POI: 'C:/Users/student/Documents/Project/POI/vehicles1.kml'
+    # Four corners to crop to
+    FC_tl: [35.3504449,-116.5956315]
+    FC_tr: [35.35013361,-116.5958535]
+    FC_bl: [35.35057994,-116.595913]
+    FC_br: [35.35027094,-116.596135]
+    # extra border size cropped area (m)
+    pad: 100
+dome:
+    # Add dome to target area to promote side views
+    enable: False
+    # Height of added dome (m)
+    height: 15
+angle_reduction:
+    # Adjust FOV to increase overlap
+    enable: True
+    # Adjustment for visibility checks (0-1)
+    visibility: 0.95
+    # Adjustment for plotting
+    plotting: 1
+overlap_enhancement:
+    # Promote centered points
+    enable: True
+    ratio: 0.15
+cam_range:
+    # Camera far visibility limit (far * max(cam_elevation))
+    far: 1.5
+    # Camera near visibility limit (m)
+    near: 200
+selection:
+    # Coverage tolerance for greedy algorithm
+    tol: 1
+plotting:
+    # Do plots (with associated calculations)
+    enable: True
+    # Turn various plots on and off
+    initialImages: True
+    finalImages: True
+    initialCoverage: True
+    finalCoverage: True
+    frustums: True
+output:
+    # Write selected frame list, copy images to Selected folder,
+    # Geotag images, and write pair list
+    enable: True
+    # Number of matches between images in pair list
+    pair_list_matches: 8
