@@ -1,7 +1,8 @@
 ## Original Author 
 
-***Ronald martin
-Brigham Young University pursuing a degree in Chemical Engineering***
+***Ronald Martin***
+
+***Brigham Young University pursuing a degree in Chemical Engineering***
 
 ## Synopsis
 
