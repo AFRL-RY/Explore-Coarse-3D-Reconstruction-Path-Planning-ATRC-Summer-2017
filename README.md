@@ -1,3 +1,8 @@
+## Original Author 
+
+***Ronald martin
+Brigham Young University pursuing a degree in Chemical Engineering***
+
 ## Synopsis
 
 This is an automated view planning tool for 3D reconstruction.  The SelectImages mode selects a minimum image set from existing images using terrain data and image metadata.  The PlanFlight mode generates the optimal positions for a minimal image set and plans the shortest path through those points.
