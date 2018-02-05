@@ -59,6 +59,11 @@ The package can then be installed with the following command, adapting to the sp
 ```
 pip install GDAL-X.Y.Z-cp27-none-win_XYZ.whl
 ```
+UPDATE
+GDAL can now be installed for windows using the command:
+```
+conda install -c conda-forge gdal
+```
 
 ExifTool is required to geotag the selected images.  It can be downloaded [here](http://www.sno.phy.queensu.ca/~phil/exiftool), and must be added to the system path so that Python can find it.
 
